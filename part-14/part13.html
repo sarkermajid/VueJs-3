@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <h2>Skills of Developers =></h2>
+        <ul>
+            <li v-for="(skill, i) in skills" :key="skill.name">
+              <p>
+                {{i + 1}}. {{ skill.name }} -
+                <span v-if="skill.experience < 4">Beginner ({{ skill.experience }}years)</span>
+                <span v-else-if="skill.experience < 6">Proficient ({{ skill.experience }}years)</span>
+                <span v-else>Expert ({{ skill.experience }}years)</span>
+              </p>
+            </li>
+          </ul>
+    </div>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

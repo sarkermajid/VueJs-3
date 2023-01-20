@@ -1,0 +1,38 @@
+.button {
+    padding: 5px 11px;
+    margin: 5px;
+}
+
+.active {
+    background-color: rgb(3, 78, 97);
+    color: #fff;
+    border: 1px solid rgb(3, 78, 97);
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+}
+
+.red {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+}
+
+.green {
+    width: 200px;
+    height: 50px;
+    background-color: green;
+}
+
+.blue {
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+}
